@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>HIT FIT - Homepage</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/index.html"><img src="/logo.jpg" alt="Hit Fit Logo" width="170px" height="170px"></a>
+        </div>
+        <span class="slogan">FITNESS.<br><br>FOR.<br><br>ALL.</span>
+        <ul class="list-1">
+            <li class="header-box"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+            <li class="header-box li-mid"><a href="#"><i class="fa fa-user-o" aria-hidden="true"></i></a></li>
+            <li class="header-box"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+        </ul>
+    </header>
+    <nav>
+        <ul class="list-2">
+            <li class="active"><a href="#">Home</a></li>
+            <li class="nav-box"><a href="#">Shop</a></li>
+            <li class="nav-box"><a href="/about.html">About Us</a></li>
+            <li class="nav-box"><a href="/contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="welcome">
+            <div class="welcome-box">
+                <h2>WELCOME TO HIT FIT!</h2>
+                <p>Your one-stop shop for any and every kind of exercise equipment. Hit Fit is an online gym equipment's store of high-quality products with excellent customer service.</p>
+                <a href="#"><button>LEARN MORE</button></a>
+            </div>
+            <img src="/j.jpg" width="400px" height="400px" id="image-1">
+            <img src="/l.jpg" width="400px" height="400px" id="image-2">
+        </section>
+        <section class="newsletter">
+            <div class="newsletter-box">
+                <h2 class="section-header">Join Our Hit Fit Family!</h2>
+                <p>Sign up to stay updated with our new releases! Subscribe and avail exclusive subscriber-only offers and discounts</p>
+                <input type="email" placeholder="Enter your email">
+                <button>SUBSCRIBE</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <ul>
+                <lh class="list-heading">MY ACCOUNT</lh>
+                <li class="list-link link-1"><a href="#">My Account</a></li>
+                <li class="list-link"><a href="#">Login</a></li>
+                <li class="list-link"><a href="#">My Cart</a></li>
+                <li class="list-link"><a href="#">Wishlist</a></li>
+                <li class="list-link"><a href="#">Checkout</a></li>
+            </ul>  
+        </div>
+        <div>
+            <ul>
+                <lh class="list-heading">INFORMATION</lh>
+                <li class="list-link link-1"><a href="#">About Us</a></li>
+                <li class="list-link"><a href="#">Privacy Policy</a></li>
+                <li class="list-link"><a href="#">Return Policy</a></li>
+                <li id="footer_icons">
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+            <h6>© 2022 Hit Fit, Pakistan Inc. All rights reserved.</h6>
+        </div>
+        <div>
+            <ul>
+                <lh class="list-heading">CUSTOMER SERVICE</lh>
+                <li class="list-link link-1"><a href="/contact.html">Contact Us</a></li>
+                <li class="list-link"><a href="#">FAQs</a></li>
+                <li class="list-link"><a href="#">Give us your feedback</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        function changeBg(){
+            const images=['url("/c.png")', 'url("/b.jpg")', 'url("/c.jpg")', 'url("/d.jpg")', 'url("/e.jpg")', 'url("/f.jpg")', 'url("/g.jpg")', 'url("/h.jpg")']
+
+            const header=document.querySelector('header')
+            const count=0
+            const bg=images[Math.floor(Math.random()*images.length)]
+
+            header.style.backgroundImage=bg
+        }
+        setInterval(changeBg, 6000)
+    </script>
+</body>
+</html>
