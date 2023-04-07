@@ -11,7 +11,7 @@
 header{
     display: flex;
     flex-direction: row;
-    background-image: url("/c.png");
+    background-image: url("/assets/c.png");
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.7);
     background-size: 109% 109%;
     animation: shrink 6s linear infinite alternate-reverse;
@@ -164,7 +164,7 @@ nav{
     width: 100%;
     height: 400px;
     /* background-image: url("https://source.unsplash.com/1400x400/?ropes,blurry"); */
-    background-image: url("/a.png");
+    background-image: url("/assets/a.png");
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.8);
 }
 .newsletter-box{
