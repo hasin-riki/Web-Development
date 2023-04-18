@@ -7,7 +7,7 @@ export default function Signup(){
     const navigate=useNavigate();
 
     const [user, setUser]=useState({
-        firstName: "",
+        firstName:"",
         lastName: "",
         age: "",
         gender: "",
@@ -19,12 +19,14 @@ export default function Signup(){
     });
 
     const handleChange = e => {
-        const {name, value} = e.target;
+        const {name, value}=e.target;
         setUser({
             ...user,
             [name]: value,
         })
     }
+    
+    console.log(email);
 
     const signup=()=>{
         const {firstName, lastName, age, gender, role, phone, email, password, reEnterPassword}=user;
